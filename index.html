@@ -4,7 +4,7 @@
  * @Author: Hu Pei
  * @Date: 2023-10-08 20:41:57
  * @LastEditors: Hu Pei
- * @LastEditTime: 2026-02-11 16:58:30
+ * @LastEditTime: 2026-02-12 10:16:45
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,8 +15,8 @@
     <title>琥珀的展馆</title>
 	
 	
-    <script type="module" crossorigin src="./assets/index-016b27be.js"></script>
-    <link rel="stylesheet" href="./assets/index-1aa4d76d.css">
+    <script type="module" crossorigin src="./assets/index-6ced56b6.js"></script>
+    <link rel="stylesheet" href="./assets/index-d29a7396.css">
   </head>
   <body>
     <!-- loading相关 -->
@@ -72,6 +72,20 @@
 
     <!-- 虚拟摇杆 -->
     <div id="joystick"></div>
+
+    <!-- 密码弹窗 -->
+    <div class="password-dialog display-none">
+      <div class="password-container">
+        <h2>请输入生日</h2>
+        <p class="password-hint">请输入宝宝生日才能进入展馆</p>
+        <input type="password" class="password-input" placeholder="请输入生日月日(MMDD)" maxlength="8">
+        <div class="password-error display-none">密码错误，请重新输入</div>
+        <div class="password-buttons">
+          <button class="password-submit">确认</button>
+          <button class="password-cancel">取消</button>
+        </div>
+      </div>
+    </div>
 
     
   </body>
